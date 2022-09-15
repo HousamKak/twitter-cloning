@@ -6,33 +6,45 @@
    box-sizing:border-box;
   }
 
-/* right content */
+/* left content */
 
-.right-content{
+.left-content{
  display: flex;
  justify-content: center;
  align-items: center;
  overflow: hidden;
 }
 
+.img-postion{
+max-height: 100%;
+}
 .logo-position{
 position: absolute;
-height: 20rem;
+height: 18rem;
 }
 
 .logo{
   height: 100%;
 }
+
+
 /* left content */
-.left-content{
+.right-content{
 background-color: black;
-flex:1 1 60rem;
+flex:1 1 56rem;
 }
 
   /* Utilities */
 
 .container{
     display: flex;
-    
+  height: 110vh;
 }
 
+/* Media queries */
+
+@media screen and (max-width: 700px) {
+  .container {
+    display: none;
+  }
+}
