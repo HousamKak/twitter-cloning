@@ -63,7 +63,7 @@ h1 {
 }
 
 .sign-up-btn {
-  border-radius: 10px;
+  border-radius: 35px;
   height: 7vh;
   min-width: 20vw;
   color: white;
@@ -79,7 +79,7 @@ h1 {
 .sign-in-btn-cont {
   display: flex;
   flex-direction: column;
-  height: 20vh;
+  height: 15vh;
   justify-content: space-around;
 }
 
@@ -88,14 +88,18 @@ h1 {
 }
 
 .sign-in-btn {
-  border-radius: 10px;
+  border-radius: 35px;
   height: 7vh;
   min-width: 20vw;
   width: 20vw;
   color: white;
   font-size: large;
   font-weight: bold;
-  background-color: #1d9bf0;
+  color: #1d9bf0;
+  background-color: black;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #536471;
 }
 
 /* Utilities */
