@@ -110,8 +110,16 @@ h1 {
 }
 /* Media queries */
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1000px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
   .left-content {
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    order: 2;
   }
 }
