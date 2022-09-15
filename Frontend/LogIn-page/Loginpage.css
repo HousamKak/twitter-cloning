@@ -7,8 +7,28 @@
   }
 
 
-  /* Utilities */
 
+  /* The right side */
+
+ 
+
+  .right-background{
+    background-image: url(/Frontend/LogIn-page/Images/TwitterBackground.png);
+    width: 55%;
+  }
+
+  .twitter-bird{
+    color: white;
+   
+
+  }
+
+  
+  /* Utilities */
+  .container{
+
+    display: flex;
+  }
 
 
   /* Media queries */
