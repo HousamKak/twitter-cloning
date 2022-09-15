@@ -59,7 +59,7 @@ h1 {
   flex-direction: column;
   justify-content: space-around;
   margin-bottom: 1vh;
-  height: 30vh;
+  height: 35vh;
 }
 
 .sign-up-btn {
@@ -75,6 +75,29 @@ h1 {
 .sign-up-btn-cont {
   margin-bottom: 10vh;
 }
+
+.sign-in-btn-cont {
+  display: flex;
+  flex-direction: column;
+  height: 20vh;
+  justify-content: space-around;
+}
+
+.sign-in-btn-cont p {
+  font-weight: bold;
+}
+
+.sign-in-btn {
+  border-radius: 10px;
+  height: 7vh;
+  min-width: 20vw;
+  width: 20vw;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  background-color: #1d9bf0;
+}
+
 /* Utilities */
 
 .container {
@@ -83,7 +106,7 @@ h1 {
 }
 /* Media queries */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 850px) {
   .left-content {
     display: none;
   }
