@@ -1,50 +1,90 @@
 /* CSS Reset */
 
 * {
-    margin: 0;
-    padding: 0;
-   box-sizing:border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 /* left content */
 
-.left-content{
- display: flex;
- justify-content: center;
- align-items: center;
- overflow: hidden;
+.left-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
-.img-postion{
-max-height: 100%;
-}
-.logo-position{
-position: absolute;
-height: 18rem;
+.logo-position {
+  position: absolute;
+  height: 18rem;
 }
 
-.logo{
+.logo {
   height: 100%;
 }
 
-
-/* left content */
-.right-content{
-background-color: black;
-flex:1 1 56rem;
+/* right content */
+.right-content {
+  background-color: black;
+  flex: 1 1 60rem;
+  padding: 2rem;
 }
 
-  /* Utilities */
-
-.container{
-    display: flex;
-  height: 110vh;
+.right-content p,
+h1 {
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.right-content-logo {
+  height: 15vh;
 }
 
+.right-logo {
+  height: 50px;
+  width: 50px;
+}
+.title-text {
+  font-size: 10vh;
+}
+
+.para-text {
+  font-size: 5vh;
+  font-weight: bold;
+}
+
+.right-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 1vh;
+  height: 30vh;
+}
+
+.sign-up-btn {
+  border-radius: 10px;
+  height: 7vh;
+  min-width: 20vw;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  background-color: #1d9bf0;
+}
+
+.sign-up-btn-cont {
+  margin-bottom: 10vh;
+}
+/* Utilities */
+
+.container {
+  display: flex;
+  height: 100vh;
+}
 /* Media queries */
 
 @media screen and (max-width: 700px) {
-  .container {
+  .left-content {
     display: none;
   }
 }
