@@ -3,32 +3,36 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+   box-sizing:border-box;
   }
 
+/* right content */
 
+.right-content{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ overflow: hidden;
+}
 
-  /* The right side */
+.logo-position{
+position: absolute;
+height: 20rem;
+}
 
- 
+.logo{
+  height: 100%;
+}
+/* left content */
+.left-content{
+background-color: black;
+flex:1 1 60rem;
+}
 
-  .right-background{
-    background-image: url(/Frontend/LogIn-page/Images/TwitterBackground.png);
-    width: 55%;
-  }
-
-  .twitter-bird{
-    color: white;
-   
-
-  }
-
-  
   /* Utilities */
-  .container{
 
+.container{
     display: flex;
-  }
+    
+}
 
-
-  /* Media queries */
