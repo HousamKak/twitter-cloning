@@ -7,55 +7,47 @@
   box-sizing: border-box;
 }
 
-/* left content */
+/* LoginPage - left content */
 
-.left-content {
+.lp-left-content {
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
 
-.logo-position {
+.lplc-logo-position {
   position: absolute;
   height: 18rem;
 }
 
-.logo {
+.lplclp-logo {
   height: 100%;
 }
 
-/* right content */
-.right-content {
+/* LoginPage - right content */
+.lp-right-content {
   background-color: black;
   flex: 1 1 60rem;
   padding: 2rem;
 }
 
-.right-content p,
+.lp-right-content p,
 h1 {
   color: white;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.right-content-logo {
+.lprc-logo-container {
   height: 15vh;
 }
 
-.right-logo {
+.lprclc-logo {
   height: 50px;
   width: 50px;
 }
-.title-text {
-  font-size: 10vh;
-}
 
-.para-text {
-  font-size: 5vh;
-  font-weight: bold;
-}
-
-.right-text {
+.lprc-right-text {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -63,7 +55,20 @@ h1 {
   height: 35vh;
 }
 
-.sign-up-btn {
+.lprcrt-title-text {
+  font-size: 10vh;
+}
+
+.lprcrt-para-text {
+  font-size: 5vh;
+  font-weight: bold;
+}
+
+.lprc-cont-upSign {
+  margin-bottom: 10vh;
+}
+
+.lprccu-btn--signUp {
   border-radius: 35px;
   height: 7vh;
   min-width: 20vw;
@@ -73,29 +78,25 @@ h1 {
   background-color: #1d9bf0;
 }
 
-.sign-up-btn-cont {
-  margin-bottom: 10vh;
-}
-
-.sign-up-btn:hover,
-.sign-up-btn:focus {
+.lprccu-btn--signUp:hover,
+.lprccu-btn--signUp:focus {
   background-color: #1a8cd8;
   text-decoration: none;
   cursor: pointer;
 }
 
-.sign-in-btn-cont {
+.lprc-cont-inSign {
   display: flex;
   flex-direction: column;
   height: 15vh;
   justify-content: space-around;
 }
 
-.sign-in-btn-cont p {
+.lprc-cont-inSign p {
   font-weight: bold;
 }
 
-.sign-in-btn {
+.lprcci-btn--signIn {
   border-radius: 35px;
   height: 7vh;
   min-width: 20vw;
@@ -110,14 +111,15 @@ h1 {
   border-color: #536471;
 }
 
-.sign-in-btn:hover,
-.sign-in-btn:focus {
+.lprcci-btn--signIn:hover,
+.lprcci-btn--signIn:focus {
   background-color: #031018;
   text-decoration: none;
   cursor: pointer;
 }
+
 /* The Modal (background) */
-.modal {
+.lprc-cont-modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -127,17 +129,20 @@ h1 {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  background-color: rgba(255, 255, 255, 0.2);
+  /* background-color: rgb(36, 45, 5, 0.4); */
+  /* rgba(0, 0, 0, 0.4); Black w/ opacity */
 }
 
 /* Modal Content */
-.modal-content {
+.lprccm-modal-content {
   position: relative;
-  background-color: #fefefe;
+  background-color: #000;
   margin: auto;
-  padding: 0;
+  /* padding: 0; */
+  border-radius: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 40%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -168,41 +173,49 @@ h1 {
   }
 }
 
+.lprccmmc-header {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+
 /* The Close Button */
-.close {
+.lprccmmch-close {
   color: white;
-  float: right;
+  float: left;
   font-size: 28px;
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.lprccmmch-close:hover,
+.lprccmmch-close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
 }
 
-.modal-header {
-  padding: 2px 16px;
-  background-color: #5cb85c;
+.text-label {
   color: white;
 }
 
+label::-moz-focus-outer {
+  font-size: smaller;
+}
 /* Utilities */
 
-.container {
+.login-page-container {
   display: flex;
   height: 100vh;
 }
+
 /* Media queries */
 
 @media screen and (max-width: 1000px) {
-  .container {
+  .login-page-container {
     display: flex;
     flex-direction: column;
   }
-  .left-content {
+  .lp-left-content {
     display: flex;
     justify-content: center;
     align-items: center;

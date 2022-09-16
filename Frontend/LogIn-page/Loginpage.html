@@ -9,35 +9,32 @@
   </head>
 
   <body>
-    <section class="container">
+    <section class="login-page-container">
       <!-- The start of the left content -->
-      <div class="left-content">
-        <img
-          class="img-postion"
-          src="/Frontend/LogIn-page/Images/TwitterBackground.png"
-        />
-        <div class="logo-position">
-          <img class="logo" src="/Frontend/LogIn-page/Images/logo.svg" />
+      <div class="lp-left-content">
+        <img src="/Frontend/LogIn-page/Images/TwitterBackground.png"/>
+        <div class="lplc-logo-position">
+          <img class="lplclp-logo" src="/Frontend/LogIn-page/Images/logo.svg" />
         </div>
       </div>
       <!-- the end of the left content -->
 
       <!-- the start of the right content -->
-      <div class="right-content">
-        <div class="right-content-logo">
+      <div class="lp-right-content">
+        <div class="lprc-logo-container">
           <img
-            class="right-logo"
+            class="lprclc-logo"
             src="/Frontend/LogIn-page/Images/logo-right.svg"
           />
         </div>
 
-        <div class="right-text">
-          <h1 class="title-text">Happening now</h1>
-          <p class="para-text">Join Twitter today.</p>
+        <div class="lprc-right-text">
+          <h1 class="lprcrt-title-text">Happening now</h1>
+          <p class="lprcrt-para-text">Join Twitter today.</p>
         </div>
 
-        <div class="sign-up-btn-cont">
-          <button id="sign-up" class="sign-up-btn">
+        <div class="lprc-cont-upSign">
+          <button id="sign-up" class="lprccu-btn--signUp">
             Sign up with phone or email
           </button>
         </div>
@@ -46,24 +43,44 @@
         <div></div>
         <!-- End of sign up modal section -->
 
-        <div class="sign-in-btn-cont">
+        <div class="lprc-cont-inSign">
           <p>Already have an account?</p>
-          <button id="sign-in" class="sign-in-btn">Sign in</button>
+          <button id="sign-in" class="lprcci-btn--signIn">Sign in</button>
         </div>
 
         <!-- Sign in modal section -->
+        <div id="myModal" class="lprc-cont-modal">
+            <!--Sign in Modal content -->
+            <div class="lprccm-modal-content">
 
-            <div id="myModal" class="modal">
+              <div class="lprccmmc-header">
+                <span class="lprccmmch-close">&times;</span>
+                <img src="/Frontend/LogIn-page/Images/logo-right.svg">
+              </div>
 
-                <!-- Modal content -->
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <span class="close">&times;</span>
-                  </div>
-                  
+              <div class="lprccmmc-main-content">
+                <p>Enter Your Credentials</p>
+                <div>
+                  <label for="p1-password" class="lprccmmctc-text-label" >Username</label>
+                  <input type="text"  id="p1-username" name="p1-username" class="lprccmmc-username-text-style">
                 </div>
+                <div>
+                  <label for="p1-password" class="lprccmmc-text-label" >Password</label>
+                  <input type="text"  id="p1-password" name="p1-password" class="lprccmmc-password-text-style">
+                </div>
+              </div>
+
+              <div class="lprccmmc-cont-login">
+                <button id="log-in" class="lprccmmccl-btn--login">
+                  log in
+                </button>
+                <p>Don't have an account?<span>Sign up</span> </p>
+              </div>
 
             </div>
+        </div>
+
+            <!--  -->
 
         <!-- End of sign in modal section -->
 
@@ -77,7 +94,7 @@
 var btn = document.querySelector("#sign-in");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName("lprccmmch-close")[0];
 
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
