@@ -25,7 +25,7 @@ window.onclick = function (event) {
 };
 
 const logIn = document.querySelector("#log-in");
-let mylocalmachine;
+let mylocalmachine="";
 fetch(mylocalmachine)
   .then((x) => x.json())
   .then((y) => trial(y));
