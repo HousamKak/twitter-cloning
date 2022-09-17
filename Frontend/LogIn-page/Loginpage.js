@@ -29,13 +29,12 @@ const user = document.querySelector("#p1-username");
 let mylocalmachine = "http://localhost/Backend/login.php";
 fetch(mylocalmachine)
   .then((x) => x.json())
-  .then((y) => trial(y));
-
-function trial(y, logIn, user) {
-  console.log(y);
-  logIn.addEventListener("click", () => {
-    for (i = 0; i < y.length; i++) {
-      console.log(user.value == y.user_name);
-    }
-  });
-}
+  .then((y) =>
+    logIn.addEventListener("click", () => {
+      for (i = 0; i < y.length; i++) {
+        console.log(user.value)
+        console.log()
+        console.log(user.value == y.user_name);
+      }
+    })
+  );
