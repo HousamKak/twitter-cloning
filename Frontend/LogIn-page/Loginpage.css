@@ -64,11 +64,11 @@ h1 {
   font-weight: bold;
 }
 
-.lprc-cont-upSign {
+.cont-upSign {
   margin-bottom: 10vh;
 }
 
-.lprccu-btn--signUp {
+.btn--signUp {
   border-radius: 35px;
   height: 7vh;
   min-width: 20vw;
@@ -78,25 +78,25 @@ h1 {
   background-color: #1d9bf0;
 }
 
-.lprccu-btn--signUp:hover,
-.lprccu-btn--signUp:focus {
+.btn--signUp:hover,
+.btn--signUp:focus {
   background-color: #1a8cd8;
   text-decoration: none;
   cursor: pointer;
 }
 
-.lprc-cont-inSign {
+.cont-inSign {
   display: flex;
   flex-direction: column;
   height: 15vh;
   justify-content: space-around;
 }
 
-.lprc-cont-inSign p {
+.cont-inSign p {
   font-weight: bold;
 }
 
-.lprcci-btn--signIn {
+.btn--signIn {
   border-radius: 35px;
   height: 7vh;
   min-width: 20vw;
@@ -111,15 +111,15 @@ h1 {
   border-color: #536471;
 }
 
-.lprcci-btn--signIn:hover,
-.lprcci-btn--signIn:focus {
+.btn--signIn:hover,
+.btn--signIn:focus {
   background-color: #031018;
   text-decoration: none;
   cursor: pointer;
 }
 
 /* The Modal (background) */
-.lprc-cont-modal {
+.cont-modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -130,14 +130,12 @@ h1 {
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgba(255, 255, 255, 0.2);
-  /* background-color: rgb(36, 45, 5, 0.4); */
-  /* rgba(0, 0, 0, 0.4); Black w/ opacity */
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 /* Modal Content */
-.lprccm-modal-content {
+.modal-content {
   position: relative;
   background-color: #000;
   margin: auto;
@@ -175,7 +173,7 @@ h1 {
   }
 }
 
-.lprccmmc-header {
+.header {
   display: flex;
   width: 53%;
   justify-content: space-between;
@@ -183,28 +181,28 @@ h1 {
 }
 
 /* The Close Button */
-.lprccmmch-close {
+.close {
   color: white;
   float: left;
   font-size: 28px;
   font-weight: lighter;
 }
 
-.lprccmmch-close:hover,
-.lprccmmch-close:focus {
+.close:hover,
+.close:focus {
   color: rgb(57, 54, 54);
   text-decoration: none;
   cursor: pointer;
 }
 
 /* end close button */
-.lprccmmch-img {
+.img {
   height: 4vh;
   margin-top: 0.4rem;
   margin-left: auto;
 }
 
-.lprccmmc-main-content {
+.modal-main-content {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -216,16 +214,16 @@ h1 {
   margin-bottom: 3vh;
 }
 
-.lprccmmc-main-content > div {
+.modal-main-content > div {
   margin-bottom: 3vh;
 }
-.lprccmmc-main-content p {
+.modal-main-content p {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 4vh;
 }
 
-.lprccmmc-main-content input {
+.modal-main-content input {
   display: block;
   width: 100%;
   background-color: black;
@@ -239,7 +237,7 @@ h1 {
   padding-left: 1.4vh;
 }
 
-.lprccmmc-username {
+.sign-username {
   color: #686c71;
   position: absolute;
   font-weight: 600;
@@ -252,14 +250,14 @@ h1 {
   transition: 0.15s ease-in-out;
 }
 
-.lprccmmc-username-text-style + .lprccmmc-username {
+.sign-username-text-style + .sign-username {
   top: 120px;
   left: 60px;
   font-size: 10px;
   color: #1b92e2;
 }
 
-.lprccmmc-password {
+.sign-password {
   color: #686c71;
   position: absolute;
   font-weight: 600;
@@ -270,52 +268,52 @@ h1 {
   transition: 0.15s ease-in-out;
 }
 
-.lprccmmc-password-text-style + .lprccmmc-password {
+.password-text-style + .sign-password {
   top: 200px;
   left: 60px;
   font-size: 10px;
   color: #1b92e2;
 }
 
-.lprccmmc-cont-login {
+.cont-login {
   padding: 0 7vh;
   margin-bottom: 3vh;
   display: flex;
   flex-direction: column;
 }
 
-.lprccmmc-cont-login button {
+.cont-login button {
   margin-bottom: 3vh;
   border-radius: 30px;
   height: 8vh;
   background-color: #77797a;
 }
 
-.lprccmmccl-btn--signup {
+.blue-color {
+  background-color: #1b92e2;
+}
+
+.btn--signup {
   margin-bottom: 3vh;
   border-radius: 30px;
   height: 8vh;
   background-color: #1b92e2;
 }
 
-.blue-color {
-  background-color: #1b92e2;
-}
-
-.lprccmmc-cont-login p {
+.cont-login p {
   font-size: medium;
   font-weight: light;
   color: #64686d;
 }
-.lprccmmc-cont-login span {
+.cont-login span {
   color: #1b92e2;
 }
 
-.lprccmmc-cont-login span:hover {
+.cont-login span:hover {
   text-decoration: underline;
 }
 
-.lprccmmccl-btn--login {
+.btn--login {
   font-size: large;
   font-weight: 500;
 }
