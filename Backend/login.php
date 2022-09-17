@@ -2,17 +2,19 @@
 
 include("connection.php");
 
-$email = $_POST["email"];
-$user_name = $_POST["user_name"]
-$user_password = $_POST["user_password"];
-
-$query = $mysqli -> prepare("INSERT INTO users (user_name, email, user_password) VALUE (?, ?, ?)");
-$query = bind_param("ssi", $user_name, $email, $user_password);
+$query = $mysqli -> prepare("SELECT user_name, user_password FROM users");
 $query -> execute();
+$array = $query->get_result();
 
 $response = [];
-$response["success"] = true;
 
-echo json_encode($response)
+while($a = $array->fetch_assoc()){
+    $response[] = $a;
+}
+
+$json = json_encode($response);
+echo $json;
 
 ?>
+
+<!-- needs edits -->
