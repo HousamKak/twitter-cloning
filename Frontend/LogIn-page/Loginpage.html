@@ -11,26 +11,26 @@
   <body>
     <section class="login-page-container">
       <!-- The start of the left content -->
-      <div class="lp-left-content">
+      <div class="left-content">
         <img src="/Frontend/LogIn-page/Images/TwitterBackground.png" />
-        <div class="lplc-logo-position">
-          <img class="lplclp-logo" src="/Frontend/LogIn-page/Images/logo.svg" />
+        <div class="logo-position">
+          <img class="logo-style" src="/Frontend/LogIn-page/Images/logo.svg" />
         </div>
       </div>
       <!-- the end of the left content -->
 
       <!-- the start of the right content -->
-      <div class="lp-right-content">
-        <div class="lprc-logo-container">
+      <div class="right-content">
+        <div class="logo-container">
           <img
-            class="lprclc-logo"
+            class="logo-container-logo"
             src="/Frontend/LogIn-page/Images/logo-right.svg"
           />
         </div>
 
-        <div class="lprc-right-text">
-          <h1 class="lprcrt-title-text">Happening now</h1>
-          <p class="lprcrt-para-text">Join Twitter today.</p>
+        <div class="right-text">
+          <h1 class="title-text">Happening now</h1>
+          <p class="para-text">Join Twitter today.</p>
         </div>
 
         <div class="lprc-cont-upSign">
@@ -40,13 +40,6 @@
         </div>
 
         <!-- Sign up modal section -->
-        <!-- 
-          full name
-          user name
-          email
-          dob
-          password
-         -->
 
         <div id="myModal-signup" class="lprc-cont-modal">
         <!--Sign up Modal content -->
@@ -59,8 +52,8 @@
             />
           </div>
 
-          <div class="lprccmmc-main-content">
-            <p>Enter Your Credentials</p>
+          <div class="lprccmmc-main-content margin-bottom">
+            <p>Create an Account</p>
             <div>
               <input
                 type="text"
@@ -69,7 +62,40 @@
                 class="lprccmmc-username-text-style"
               />
               <label for="p1-password" class="lprccmmc-username"
-                >Username</label
+                >full name</label
+              >
+            </div>
+            <div>
+              <input
+                type="text"
+                id="p1-password"
+                name="p1-password"
+                class="lprccmmc-password-text-style"
+              />
+              <label for="p1-password" class="lprccmmc-password"
+                >username</label
+              >
+            </div>
+            <div>
+              <input
+                type="text"
+                id="p1-password"
+                name="p1-password"
+                class="lprccmmc-password-text-style"
+              />
+              <label for="p1-password" class="lprccmmc-password"
+                >email</label
+              >
+            </div>
+            <div>
+              <input
+                type="text"
+                id="p1-password"
+                name="p1-password"
+                class="lprccmmc-password-text-style"
+              />
+              <label for="p1-password" class="lprccmmc-password"
+                >Date of birth</label
               >
             </div>
             <div>
@@ -86,7 +112,7 @@
           </div>
 
           <div class="lprccmmc-cont-login">
-            <button id="log-in" class="lprccmmccl-btn--login">Log in</button>
+            <button id="sign-up-btn" class="lprccmmccl-btn--signup ">Sign Up</button>
             <p>Don't have an account? <span>Sign up</span></p>
           </div>
         </div>
@@ -108,7 +134,7 @@
             <img
               class="lprccmmch-img"
               src="/Frontend/LogIn-page/Images/logo-right.svg"
-            />
+            />  
           </div>
 
           <div class="lprccmmc-main-content">

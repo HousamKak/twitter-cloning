@@ -9,45 +9,45 @@
 
 /* LoginPage - left content */
 
-.lp-left-content {
+.left-content {
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
 
-.lplc-logo-position {
+.logo-position {
   position: absolute;
   height: 18rem;
 }
 
-.lplclp-logo {
+.logo-style {
   height: 100%;
 }
 
 /* LoginPage - right content */
-.lp-right-content {
+.right-content {
   background-color: black;
   flex: 1 1 60rem;
   padding: 2rem;
 }
 
-.lp-right-content p,
+.right-content p,
 h1 {
   color: white;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.lprc-logo-container {
+.logo-container {
   height: 15vh;
 }
 
-.lprclc-logo {
+.logo-container-logo {
   height: 50px;
   width: 50px;
 }
 
-.lprc-right-text {
+.right-text {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -55,11 +55,11 @@ h1 {
   height: 35vh;
 }
 
-.lprcrt-title-text {
+.title-text {
   font-size: 10vh;
 }
 
-.lprcrt-para-text {
+.para-text {
   font-size: 5vh;
   font-weight: bold;
 }
@@ -192,7 +192,7 @@ h1 {
 
 .lprccmmch-close:hover,
 .lprccmmch-close:focus {
-  color: #000;
+  color: rgb(57, 54, 54);
   text-decoration: none;
   cursor: pointer;
 }
@@ -210,6 +210,10 @@ h1 {
   flex-direction: column;
   padding: 0 7vh;
   margin-bottom: 27vh;
+}
+
+.margin-bottom {
+  margin-bottom: 3vh;
 }
 
 .lprccmmc-main-content > div {
@@ -286,6 +290,18 @@ h1 {
   height: 8vh;
   background-color: #77797a;
 }
+
+.lprccmmccl-btn--signup {
+  margin-bottom: 3vh;
+  border-radius: 30px;
+  height: 8vh;
+  background-color: #1b92e2;
+}
+
+.blue-color {
+  background-color: #1b92e2;
+}
+
 .lprccmmc-cont-login p {
   font-size: medium;
   font-weight: light;
