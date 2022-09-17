@@ -289,15 +289,15 @@ h1 {
   background-color: #77797a;
 }
 
-.blue-color {
+#sign-up-btn {
   background-color: #1b92e2;
 }
 
-.btn--signup {
-  margin-bottom: 3vh;
-  border-radius: 30px;
-  height: 8vh;
-  background-color: #1b92e2;
+#sign-up-btn:hover,
+#sign-up-btm:focus {
+  background-color: #1a8cd8;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .cont-login p {
@@ -313,9 +313,15 @@ h1 {
   text-decoration: underline;
 }
 
+.btn-signup-modal {
+  color: white;
+  font-size: large;
+  font-weight: bold;
+}
+
 .btn--login {
   font-size: large;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 /* Utilities */
