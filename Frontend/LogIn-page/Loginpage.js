@@ -32,9 +32,9 @@ fetch(mylocalmachine)
   .then((y) =>
     logIn.addEventListener("click", () => {
       for (i = 0; i < y.length; i++) {
-        console.log(user.value)
-        console.log()
-        console.log(user.value == y.user_name);
+        console.log(user.value);
+        console.log(y.user_name);
+        // console.log(user.value == y.user_name);
       }
     })
   );
