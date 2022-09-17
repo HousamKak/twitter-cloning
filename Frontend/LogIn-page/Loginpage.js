@@ -25,13 +25,17 @@ window.onclick = function (event) {
 };
 
 const logIn = document.querySelector("#log-in");
-let mylocalmachine="http://localhost/twitter-cloning/backend/login.php";
+const user = document.querySelector("#p1-username");
+let mylocalmachine = "http://localhost/Backend/login.php";
 fetch(mylocalmachine)
   .then((x) => x.json())
   .then((y) => trial(y));
 
-function trial(y, logIn) {
-  for (i = 0; i < y.length; i++) {
-    console.log(logIn.value == y.user_name);
-  }
+function trial(y, logIn, user) {
+  console.log(y);
+  logIn.addEventListener("click", () => {
+    for (i = 0; i < y.length; i++) {
+      console.log(user.value == y.user_name);
+    }
+  });
 }
