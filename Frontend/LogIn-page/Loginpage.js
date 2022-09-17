@@ -25,7 +25,7 @@ window.onclick = function (event) {
 };
 
 const logIn = document.querySelector("#log-in");
-let mylocalmachine="";
+let mylocalmachine="http://localhost/twitter-cloning/backend/login.php";
 fetch(mylocalmachine)
   .then((x) => x.json())
   .then((y) => trial(y));
