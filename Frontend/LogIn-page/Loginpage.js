@@ -26,15 +26,26 @@ window.onclick = function (event) {
 
 const logIn = document.querySelector("#log-in");
 const user = document.querySelector("#p1-username");
+const password = document.querySelector("#p1-password");
 let mylocalmachine = "http://localhost/Backend/login.php";
 fetch(mylocalmachine)
   .then((x) => x.json())
   .then((y) =>
     logIn.addEventListener("click", () => {
       for (i = 0; i < y.length; i++) {
-        console.log(user.value);
-        console.log(y.user_name);
-        // console.log(user.value == y.user_name);
+        userfound = 0;
+        if (user.value == y[i].user_name) {
+          userfound = 1;
+          if (password.value == y[i].user_password) {
+            console.log("the user is verified");
+          } else {
+            console.log("wrong password");
+          }
+          break;
+        }
+      }
+      if (!userfound) {
+        console.log("You are not registered");
       }
     })
   );
