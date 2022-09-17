@@ -12,7 +12,7 @@
     <section class="login-page-container">
       <!-- The start of the left content -->
       <div class="lp-left-content">
-        <img src="/Frontend/LogIn-page/Images/TwitterBackground.png"/>
+        <img src="/Frontend/LogIn-page/Images/TwitterBackground.png" />
         <div class="lplc-logo-position">
           <img class="lplclp-logo" src="/Frontend/LogIn-page/Images/logo.svg" />
         </div>
@@ -35,82 +35,115 @@
 
         <div class="lprc-cont-upSign">
           <button id="sign-up" class="lprccu-btn--signUp">
-            Sign up with email
+            Sign up
           </button>
         </div>
 
         <!-- Sign up modal section -->
+        <!-- 
+          full name
+          user name
+          email
+          dob
+          password
+         -->
 
-         <!-- <div id="myModal-signup" class="lprc-cont-modal"> -->
-          <!--Sign up Modal content -->
-          <!-- <div class="lprccm-modal-content">
+        <div id="myModal-signup" class="lprc-cont-modal">
+        <!--Sign up Modal content -->
+        <div class="lprccm-modal-content">
+          <div class="lprccmmc-header">
+            <span id="signup-close" class="lprccmmch-close">&times;</span>
+            <img
+              class="lprccmmch-img"
+              src="/Frontend/LogIn-page/Images/logo-right.svg"
+            />
+          </div>
 
-            <div class="lprccmmc-header">
-              <span id="signup-close" class="lprccmmch-close">&times;</span>
-              <img class="lprccmmch-img" src="/Frontend/LogIn-page/Images/logo-right.svg">
+          <div class="lprccmmc-main-content">
+            <p>Enter Your Credentials</p>
+            <div>
+              <input
+                type="text"
+                id="p1-username"
+                name="p1-username"
+                class="lprccmmc-username-text-style"
+              />
+              <label for="p1-password" class="lprccmmc-username"
+                >Username</label
+              >
             </div>
-
-            <div class="lprccmmc-main-content">
-              <p>Enter Your Credentials</p>
-              <div id="1">
-                <input type="text"  id="p1-username" name="p1-username" class="lprccmmc-username-text-style">
-                <label for="p1-password" class="lprccmmc-username" >Username</label>
-              </div>            
-              <div id="2">
-                <input type="text"  id="p1-password" name="p1-password" class="lprccmmc-password-text-style">
-                <label for="p1-password" class="lprccmmc-password" >Password</label>
-              </div>
+            <div>
+              <input
+                type="text"
+                id="p1-password"
+                name="p1-password"
+                class="lprccmmc-password-text-style"
+              />
+              <label for="p1-password" class="lprccmmc-password"
+                >Password</label
+              >
             </div>
+          </div>
 
-            <div class="lprccmmc-cont-login">
-              <button id="log-in" class="lprccmmccl-btn--login">
-                Log in
-              </button>
-              <p>Don't have an account? <span>Sign up</span> </p>
-            </div>
-
-          </div> -->
-      <!-- </div> -->
-
-        <!-- End of sign up modal section -->
-
-        <div class="lprc-cont-inSign">
-          <p>Already have an account?</p>
-          <button id="sign-in" class="lprcci-btn--signIn">Sign in</button>
+          <div class="lprccmmc-cont-login">
+            <button id="log-in" class="lprccmmccl-btn--login">Log in</button>
+            <p>Don't have an account? <span>Sign up</span></p>
+          </div>
         </div>
+      </div>
 
-        <!-- Sign in modal section -->
-        <div id="myModal-signin" class="lprc-cont-modal">
-            <!--Sign in Modal content -->
-            <div class="lprccm-modal-content">
+      <!-- End of sign up modal section -->
 
-              <div class="lprccmmc-header">
-                <span id="signin-close" class="lprccmmch-close">&times;</span>
-                <img class="lprccmmch-img" src="/Frontend/LogIn-page/Images/logo-right.svg">
-              </div>
+      <div class="lprc-cont-inSign">
+        <p>Already have an account?</p>
+        <button id="sign-in" class="lprcci-btn--signIn">Sign in</button>
+      </div>
 
-              <div class="lprccmmc-main-content">
-                <p>Enter Your Credentials</p>
-                <div id="1">
-                  <input type="text"  id="p2-username" name="p2-username" class="lprccmmc-username-text-style">
-                  <label for="p2-username" class="lprccmmc-username" >Username</label>
-                </div>            
-                <div id="2">
-                  <input type="text"  id="p2-password" name="p2-password" class="lprccmmc-password-text-style">
-                  <label for="p2-password" class="lprccmmc-password" >Password</label>
-                </div>
-              </div>
+      <!-- Sign in modal section -->
+      <div id="myModal-signin" class="lprc-cont-modal">
+        <!--Sign in Modal content -->
+        <div class="lprccm-modal-content">
+          <div class="lprccmmc-header">
+            <span id="signin-close" class="lprccmmch-close">&times;</span>
+            <img
+              class="lprccmmch-img"
+              src="/Frontend/LogIn-page/Images/logo-right.svg"
+            />
+          </div>
 
-              <div class="lprccmmc-cont-login">
-                <button id="log-in" class="lprccmmccl-btn--login">
-                  Log in
-                </button>
-                <p>Don't have an account? <span>Sign up</span> </p>
-              </div>
-
+          <div class="lprccmmc-main-content">
+            <p>Enter Your Credentials</p>
+            <div>
+              <input
+                type="text"
+                id="p2-username"
+                name="p2-username"
+                class="lprccmmc-username-text-style"
+              />
+              <label for="p2-username" class="lprccmmc-username"
+                >Username</label
+              >
             </div>
+            <div>
+              <input
+                type="text"
+                id="p2-password"
+                name="p2-password"
+                class="lprccmmc-password-text-style"
+              />
+              <label for="p2-password" class="lprccmmc-password"
+                >Password</label
+              >
+            </div>
+          </div>
+
+          <div class="lprccmmc-cont-login">
+            <button id="log-in" class="lprccmmccl-btn--login">Log in</button>
+            <p>Don't have an account? <span>Sign up</span></p>
+          </div>
         </div>
-        <!-- End of sign in modal section -->
+      </div>
+      <!-- End of sign in modal section -->
 
       <!-- the end of the right content -->
     </section>

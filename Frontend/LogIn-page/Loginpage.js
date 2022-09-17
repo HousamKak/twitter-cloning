@@ -1,27 +1,55 @@
-// Get the Sign-in Modal
+// Get the Sign-up Modal
 ///////////////////////////////////////////////////////////////////
-var sign_in_modal = document.querySelector("#myModal-signin");
+var signupmodal = document.querySelector("#myModal-signup");
 
 // Get the button that opens the modal
-var sign_in_btn = document.querySelector("#sign-in");
+var signupbtn = document.querySelector("#sign-up");
 
 // Get the <span> element that closes the modal
-var sign_in_close = document.querySelector("#signin-close")[0];
+var signupclose = document.querySelector("#signup-close");
 
 // When the user clicks the button, open the modal
-sign_in_btn.onclick = function () {
-  sign_in_modal.style.display = "block";
+signupbtn.onclick = function () {
+  signupmodal.style.display = "block";
 };
 
 // When the user clicks on <span> (x), close the modal
-sign_in_close.onclick = function () {
-  sign_in_modal.style.display = "none";
+signupclose.onclick = function () {
+  signupmodal.style.display = "none";
 };
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
-  if (event.target == sign_in_modal) {
-    sign_in_modal.style.display = "none";
+  if (event.target == signupmodal) {
+    signupmodal.style.display = "none";
+  }
+};
+////////////////////////////////////////////////////////////////////
+
+// Get the Sign-in Modal
+///////////////////////////////////////////////////////////////////
+var signinmodal = document.querySelector("#myModal-signin");
+
+// Get the button that opens the modal
+var signinbtn = document.querySelector("#sign-in");
+
+// Get the <span> element that closes the modal
+var signinclose = document.querySelector("#signin-close");
+
+// When the user clicks the button, open the modal
+signinbtn.onclick = function () {
+  signinmodal.style.display = "block";
+};
+
+// When the user clicks on <span> (x), close the modal
+signinclose.onclick = function () {
+  signinmodal.style.display = "none";
+};
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target == signinmodal) {
+    signinmodal.style.display = "none";
   }
 };
 ////////////////////////////////////////////////////////////////////
