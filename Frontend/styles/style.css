@@ -338,7 +338,7 @@ label {
 }
 
 .right-side {
-  background-color: rgb(176, 237, 176);
+  background-color: black;
   width: 34%;
   height: 100vh;
   position: fixed;
@@ -412,7 +412,7 @@ label {
   width: 30px;
   border-radius: 50px;
   border: none;
-  background-color: #1a8cd8;
+  /* background-color: #1a8cd8; */
   margin-right: 7px;
   margin-top: 5px;
 }
