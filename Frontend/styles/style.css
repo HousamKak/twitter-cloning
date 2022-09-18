@@ -343,7 +343,7 @@ label {
   height: 100vh;
   position: fixed;
   left: 66%;
-  border-left: 1px #2f3336;
+  border-left: 2px #2f3336;
   border-style: solid;
   border-bottom: none;
   border-top: none;
@@ -364,9 +364,9 @@ label {
   padding: 1vh 3vh;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    border-bottom: 3px #2f3336;
-    border-style: solid;
-  }
+  border-bottom: 2px #2f3336;
+  border-style: solid;
+}
 .happening h1 {
   font-size: larger;
   margin-bottom: 2vh;
@@ -406,10 +406,43 @@ label {
 
 .tweet-btn button {
   background-color: #1d9bf0;
-  width: 5.5vw;
+  width: 10vh;
   height: 5vh;
   color: white;
   border-radius: 20px;
   font-size: medium;
   font-weight: bold;
+}
+
+/* Element styling */
+.reusable-element {
+  padding: 1vh 3vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border-bottom: 2px #2f3336;
+  border-style: solid;
+}
+
+.image-content {
+  display: flex;
+  width: 100%;
+}
+
+/* .image-content > div {
+  
+}
+
+.image-content > div h1 {
+  font-size: large;
+  margin-bottom: 2vh;
+}
+
+*/
+.image-content > div > p {
+  color: white;
+}
+
+.title-text {
+  display: flex;
+  flex-direction: row;
 }
