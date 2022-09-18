@@ -1,0 +1,606 @@
+/* CSS Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* LoginPage */
+/* LoginPage - left content */
+
+.left-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.logo-position {
+  position: absolute;
+  height: 18rem;
+}
+
+.logo-style {
+  height: 100%;
+}
+
+/* LoginPage - right content */
+.right-content {
+  background-color: black;
+  flex: 1 1 60rem;
+  padding: 2rem;
+}
+
+.right-content p,
+h1 {
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.logo-container {
+  height: 15vh;
+}
+
+.logo-container-logo {
+  height: 50px;
+  width: 50px;
+}
+
+.right-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 1vh;
+  height: 35vh;
+}
+
+.title-text {
+  font-size: 10vh;
+}
+
+.para-text {
+  font-size: 5vh;
+  font-weight: bold;
+}
+
+.cont-upSign {
+  margin-bottom: 10vh;
+}
+
+.btn--signUp {
+  border-radius: 35px;
+  height: 7vh;
+  min-width: 20vw;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  background-color: #1d9bf0;
+}
+
+.btn--signUp:hover,
+.btn--signUp:focus {
+  background-color: #1a8cd8;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cont-inSign {
+  display: flex;
+  flex-direction: column;
+  height: 15vh;
+  justify-content: space-around;
+}
+
+.cont-inSign p {
+  font-weight: bold;
+}
+
+.btn--signIn {
+  border-radius: 35px;
+  height: 7vh;
+  min-width: 20vw;
+  width: 20vw;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  color: #1d9bf0;
+  background-color: black;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #536471;
+}
+
+.btn--signIn:hover,
+.btn--signIn:focus {
+  background-color: #031018;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* The Modal (background) */
+.cont-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 40px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(255, 255, 255, 0.2);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #000;
+  margin: auto;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  border: 1px solid #888;
+  width: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.header {
+  display: flex;
+  width: 53%;
+  justify-content: space-between;
+  margin-bottom: 5vh;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: left;
+  font-size: 28px;
+  font-weight: lighter;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(57, 54, 54);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* end close button */
+.img {
+  height: 4vh;
+  margin-top: 0.4rem;
+  margin-left: auto;
+}
+
+.modal-main-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0 7vh;
+  margin-bottom: 27vh;
+}
+
+.margin-bottom {
+  margin-bottom: 3vh;
+}
+
+.modal-main-content > div {
+  margin-bottom: 3vh;
+}
+.modal-main-content p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 4vh;
+}
+
+.modal-main-content input {
+  display: block;
+  width: 100%;
+  background-color: black;
+  border-style: solid;
+  border-color: #333639;
+  border-width: 1px;
+  height: 8vh;
+  border-radius: 5px;
+  color: white;
+  padding-left: 1.4vh;
+}
+
+.cont-login {
+  padding: 0 7vh;
+  margin-bottom: 3vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.cont-login button {
+  margin-bottom: 3vh;
+  border-radius: 30px;
+  height: 8vh;
+  background-color: #77797a;
+}
+
+#sign-up-btn {
+  background-color: #1b92e2;
+}
+
+#sign-up-btn:hover,
+#sign-up-btm:focus {
+  background-color: #1a8cd8;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cont-login p {
+  font-size: medium;
+  font-weight: light;
+  color: #64686d;
+}
+.cont-login span {
+  color: #1b92e2;
+}
+
+.cont-login span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.btn-signup-modal {
+  color: white;
+  font-size: large;
+  font-weight: bold;
+}
+
+.btn--login {
+  font-size: large;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.white-color {
+  background-color: white;
+}
+/* Utilities */
+
+.login-page-container {
+  display: flex;
+  height: 100vh;
+}
+
+label {
+  color: red;
+  padding-left: 1.4vh;
+}
+/* Media queries */
+
+@media screen and (max-width: 1000px) {
+  .login-page-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .left-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    order: 2;
+  }
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Home page */
+
+.Home-page-container {
+  display: flex;
+}
+
+.left-side {
+  height: 100vh;
+  width: 26%;
+  position: fixed;
+  background-color: black;
+  border-right: 1px #2f3336;
+  border-style: solid;
+  border-bottom: none;
+  border-top: none;
+  border-left: none;
+}
+
+.right-side {
+  background-color: black;
+  width: 34%;
+  height: 100vh;
+  position: fixed;
+  left: 66%;
+  border-left: 2px #2f3336;
+  border-style: solid;
+  border-bottom: none;
+  border-top: none;
+  border-right: none;
+}
+
+.middle-side {
+  /* height: 1000vh; */
+  background-color: black;
+  width: 40%;
+  position: absolute;
+  left: 26%;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+}
+
+.rightside-search {
+  display: flex;
+  background-color: #202327;
+  margin: 3vh 0vw 3vh 2vw;
+  border-radius: 50px;
+  width: 70%;
+}
+
+.rightside-search-icon {
+  height: 100%;
+}
+
+.rightside-searchdiv {
+  background-color: #202327;
+  /* display: flex; */
+  /* margin: 10px 10px; */
+  height: 4vh;
+  margin-left: 1vw;
+  margin-top: 1.5vh;
+}
+
+.rightside-searchinput {
+  background-color: #202327;
+  padding: 2vh 1vw;
+  /* border-radius: 50px; */
+  border: #202327;
+}
+
+.rightside-whotofollow {
+  /* margin: 50vh; */
+  margin-left: 2vw;
+  height: 30vh;
+  width: 70%;
+  background-color: #202327;
+  border-radius: 20px;
+  /* padding-bottom: 20vh; */
+}
+
+.rightside-h3 {
+  margin: 2vh 0 0 1vw;
+  color: #ffffff;
+  margin-bottom: 2vh;
+}
+
+.rightside-imgs {
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  border: none;
+  /* background-color: #1a8cd8; */
+  margin-right: 7px;
+  margin-top: 5px;
+}
+
+.rightside-rows {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2vh;
+}
+
+.rightside-img-username {
+  display: flex;
+  margin-left: 12px;
+}
+
+.rightside-follow {
+  margin-right: 12px;
+  border-radius: 20px;
+  height: 5vh;
+  width: 5vw;
+}
+
+.rightside-p {
+  color: #ffffff;
+}
+
+
+/* Left side */
+
+.leftside-logo{
+  height: 100%;
+}
+
+.leftside-logodiv{
+  height: 40px;
+  margin: 8vh 0 10vh 3vw;
+}
+
+.leftside-p{
+  color: white;
+  font-weight: 800;
+  font-size: 25px;
+  margin-top: 2vh;
+  margin-left: 1vw;
+}
+
+.leftside-home-profile{
+  display: flex;
+  margin: 3vh 0 0vh 3vw;
+}
+
+.leftside-icon{
+  height: 100%;
+}
+
+.leftside-icondiv{
+  height: 40px;
+  margin: 0vh 0 1vh 0vw;
+}
+
+.leftside-footer-rows{
+  display: flex;
+}
+
+.leftside-threedots{
+  color: white;
+  font-size: 4vh;
+  font-weight: 700;
+  margin-left: 1vw;
+}
+
+.leftside-footer{
+  margin: 45vh 0 0 2vw;
+}
+
+.leftside-img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  border: none;
+  /* background-color: #1a8cd8; */
+  margin-right: 7px;
+  /* margin-top: 1px; */
+}
+/* .leftside-img-username{
+
+} */
+
+
+/* Middle side first part */
+
+.happening {
+  padding: 1vh 3vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border-bottom: 2px #2f3336;
+  border-style: solid;
+}
+.happening h1 {
+  font-size: larger;
+  margin-bottom: 2vh;
+  font-weight: 650;
+}
+
+.im-happen {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.im-happen input {
+  width: 88%;
+  color: white;
+  background-color: black;
+  border: none;
+  outline: none;
+  font-size: larger;
+}
+
+.im-happen input:focus {
+  border-bottom: 3px solid;
+}
+
+.profile-photo {
+  height: 8vh;
+  width: 8vh;
+  border-radius: 8vh;
+  margin-bottom: 2vh;
+}
+
+.tweet-btn {
+  height: 6vh;
+  display: flex;
+  justify-content: end;
+}
+
+.tweet-btn button {
+  background-color: #1d9bf0;
+  width: 10vh;
+  height: 5vh;
+  color: white;
+  border-radius: 20px;
+  font-size: medium;
+  font-weight: bold;
+}
+
+/* Element styling */
+.reusable-element {
+  padding: 1vh 3vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border-bottom: 2px #2f3336;
+  border-style: solid;
+}
+
+.title-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.title-content > p {
+  margin-top: 2vh;
+}
+
+.image-content {
+  display: flex;
+}
+
+.image-content > h1 {
+  margin-top: 2vh;
+  padding-left: 2vh;
+  font-size: large;
+}
+
+.main-text {
+  color: white;
+  margin-left: 10vh;
+  margin-top: -3vh;
+}
+
+.likes {
+  width: 95%;
+  display: flex;
+  justify-content: end;
+}
+
+.likes > p {
+  color: white;
+  margin-left: 10px;
+  margin-top: -3px;
+}
