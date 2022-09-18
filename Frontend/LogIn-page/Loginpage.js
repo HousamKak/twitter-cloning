@@ -94,28 +94,30 @@ logIn.addEventListener("click", function () {
       user_password: signup_password.value,
     }),
   });
-
+  fetch("php_signup")
+    .then((x) => x.json())
+    .then((y) => {
+      console.log(y);
+    });
 });
 
-
-
-    logIn.addEventListener("click", () => {
-      for (i = 0; i < y.length; i++) {
-        userfound = 0;
-        if (user.value == y[i].user_name) {
-          userfound = 1;
-          if (password.value == y[i].user_password) {
-            console.log("the user is verified");
-          } else {
-            console.log("wrong password");
-          }
-          break;
-        }
+logIn.addEventListener("click", () => {
+  for (i = 0; i < y.length; i++) {
+    userfound = 0;
+    if (user.value == y[i].user_name) {
+      userfound = 1;
+      if (password.value == y[i].user_password) {
+        console.log("the user is verified");
+      } else {
+        console.log("wrong password");
       }
-      if (!userfound) {
-        console.log("You are not registered");
-      }
-    })
+      break;
+    }
+  }
+  if (!userfound) {
+    console.log("You are not registered");
+  }
+});
 
 // making the log in glow
 
