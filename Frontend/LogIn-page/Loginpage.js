@@ -74,12 +74,13 @@ signup.addEventListener("click", function () {
       user_password: signup_password.value,
     }),
   });
-  signup_modal.style.display = "none";
-  signinmodal.style.display = "block";
+  // signup_modal.style.display = "none";
+  // signinmodal.style.display = "block";
 });
 
 // This is the logIn section
-const logIn = document.querySelector("#log-in");
+
+const logIn = document.querySelector("#log-In");
 const user = document.querySelector("#p2-username");
 const password = document.querySelector("#p2-password");
 
