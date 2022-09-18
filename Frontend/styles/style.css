@@ -351,9 +351,14 @@ label {
 }
 
 .middle-side {
-  /* height: 200vh; */
+  /* height: 1000vh; */
   background-color: #1a8cd8;
   width: 40%;
   position: absolute;
   left: 26%;
+}
+
+/* Middle side first part */
+
+.profile-photo {
 }
