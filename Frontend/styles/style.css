@@ -438,6 +438,71 @@ label {
 .rightside-p{
   color: #ffffff;
 }
+
+
+/* Left side */
+
+.leftside-logo{
+  height: 100%;
+}
+
+.leftside-logodiv{
+  height: 40px;
+  margin: 8vh 0 10vh 3vw;
+}
+
+.leftside-p{
+  color: white;
+  font-weight: 800;
+  font-size: 25px;
+  margin-top: 2vh;
+  margin-left: 1vw;
+}
+
+.leftside-home-profile{
+  display: flex;
+  margin: 3vh 0 0vh 3vw;
+}
+
+.leftside-icon{
+  height: 100%;
+}
+
+.leftside-icondiv{
+  height: 40px;
+  margin: 0vh 0 1vh 0vw;
+}
+
+.leftside-footer-rows{
+  display: flex;
+}
+
+.leftside-threedots{
+  color: white;
+  font-size: 4vh;
+  font-weight: 700;
+  margin-left: 1vw;
+}
+
+.leftside-footer{
+  margin: 45vh 0 0 2vw;
+}
+
+.leftside-img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  border: none;
+  /* background-color: #1a8cd8; */
+  margin-right: 7px;
+  /* margin-top: 1px; */
+}
+/* .leftside-img-username{
+
+} */
+
+
+
 /* Middle side first part */
 
 .happening {
