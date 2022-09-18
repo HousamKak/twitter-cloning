@@ -95,6 +95,20 @@ logIn.addEventListener("click", function () {
   });
 });
 
+// making the log in glow
+
+if (!user.value.Empty) {
+  password.addEventListener("input", () => {
+    logIn.style.backgroundColor = "white";
+  });
+} else {
+  if (!password.value.Empty) {
+    user.addEventListener("input", () => {
+      logIn.style.backgroundColor = "white";
+    });
+  }
+}
+
 // localStorage.setItem("man", JSON.stringify("heowaadsd"));
 // logged_in_user = localStorage.getItem("man")
 //   ? JSON.parse(localStorage.getItem("man"))
