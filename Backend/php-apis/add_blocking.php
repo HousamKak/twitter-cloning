@@ -13,9 +13,14 @@ $query->execute();
 $following_id = $_POST["following_id"];
 $follower_id = $_POST["follower_id"];
 
-$query2 = $mysqli -> prepare("DELETE FROM following_followers WHERE following_id = ? & follower_id = ?");
+$query2 = $mysqli -> prepare("DELETE FROM following_followers WHERE following_id = ? and follower_id = ?");
 $query2 -> bind_param("ii", $following_id, $follower_id);
 $query2 -> execute();
+
+$query3 = $mysqli -> prepare("DELETE FROM following_followers WHERE follower_id = ? and following_id = ?");
+$query3 -> bind_param("ii", $following_id, $follower_id);
+$query3 -> execute();
+
 
 $response = [];
 $response["success"] = true;
