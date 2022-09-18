@@ -18,12 +18,6 @@ signup_close.onclick = function () {
   signup_modal.style.display = "none";
 };
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-  if (event.target == signup_modal) {
-    signup_modal.style.display = "none";
-  }
-};
 ////////////////////////////////////////////////////////////////////
 
 // Get the Sign-in Modal
@@ -46,15 +40,20 @@ signinclose.onclick = function () {
   signinmodal.style.display = "none";
 };
 
-// When the user clicks anywhere outside of the modal, close it
+////////////////////////////////////////////////////////////////////
+
+// When the user clicks anywhere outside of any modal, close it
 window.onclick = function (event) {
   if (event.target == signinmodal) {
     signinmodal.style.display = "none";
   }
+  if (event.target == signup_modal) {
+    signup_modal.style.display = "none";
+  }
 };
 ////////////////////////////////////////////////////////////////////
 
-// sign up
+// sign up data sending to server
 const signup_name = document.querySelector("#p1-name");
 const signup_username = document.querySelector("#p1-username");
 const email = document.querySelector("#p1-email");
@@ -78,7 +77,7 @@ signup.addEventListener("click", function () {
   signinmodal.style.display = "block";
 });
 
-// This is the logIn section
+// This is the logIn section, checking if the data is in the server
 
 const logIn = document.querySelector("#log-in");
 const user = document.querySelector("#p2-username");
@@ -100,7 +99,7 @@ logIn.addEventListener("click", function () {
     });
 });
 
-// making the log in glow
+// making the log-in glow
 
 if (!user.value.Empty) {
   password.addEventListener("input", () => {
@@ -113,6 +112,13 @@ if (!user.value.Empty) {
     });
   }
 }
+
+//
+newaccount = document.querySelector("#newaccount");
+newaccount.addEventListener("click", () => {
+  signup_modal.style.display = "block";
+  signinmodal.style.display = "none";
+});
 
 // localStorage.setItem("man", JSON.stringify("heowaadsd"));
 // logged_in_user = localStorage.getItem("man")
