@@ -358,24 +358,24 @@ label {
   left: 26%;
 }
 
-.right-side{
+.right-side {
   display: flex;
   flex-direction: column;
 }
 
-.rightside-search{
+.rightside-search {
   display: flex;
   background-color: #202327;
   margin: 3vh 0vw 3vh 2vw;
   border-radius: 50px;
-  width:70%;
+  width: 70%;
 }
 
-.rightside-search-icon{
+.rightside-search-icon {
   height: 100%;
 }
 
-.rightside-searchdiv{
+.rightside-searchdiv {
   background-color: #202327;
   /* display: flex; */
   /* margin: 10px 10px; */
@@ -384,14 +384,14 @@ label {
   margin-top: 1.5vh;
 }
 
-.rightside-searchinput{
+.rightside-searchinput {
   background-color: #202327;
   padding: 2vh 1vw;
   /* border-radius: 50px; */
   border: #202327;
 }
 
-.rightside-whotofollow{
+.rightside-whotofollow {
   /* margin: 50vh; */
   margin-left: 2vw;
   height: 30vh;
@@ -401,13 +401,13 @@ label {
   /* padding-bottom: 20vh; */
 }
 
-.rightside-h3{
+.rightside-h3 {
   margin: 2vh 0 0 1vw;
   color: #ffffff;
   margin-bottom: 2vh;
 }
 
-.rightside-imgs{
+.rightside-imgs {
   height: 30px;
   width: 30px;
   border-radius: 50px;
@@ -417,25 +417,25 @@ label {
   margin-top: 5px;
 }
 
-.rightside-rows{
+.rightside-rows {
   display: flex;
   justify-content: space-between;
   margin-bottom: 2vh;
 }
 
-.rightside-img-username{
+.rightside-img-username {
   display: flex;
   margin-left: 12px;
 }
 
-.rightside-follow{
+.rightside-follow {
   margin-right: 12px;
   border-radius: 20px;
   height: 5vh;
   width: 5vw;
 }
 
-.rightside-p{
+.rightside-p {
   color: #ffffff;
 }
 
@@ -500,7 +500,6 @@ label {
 /* .leftside-img-username{
 
 } */
-
 
 
 /* Middle side first part */
@@ -568,26 +567,40 @@ label {
   border-style: solid;
 }
 
-.image-content {
+.title-content {
   display: flex;
   width: 100%;
+  justify-content: space-between;
 }
 
-/* .image-content > div {
-  
+.title-content > p {
+  margin-top: 2vh;
 }
 
-.image-content > div h1 {
-  font-size: large;
-  margin-bottom: 2vh;
-}
-
-*/
-.image-content > div > p {
-  color: white;
-}
-
-.title-text {
+.image-content {
   display: flex;
-  flex-direction: row;
+}
+
+.image-content > h1 {
+  margin-top: 2vh;
+  padding-left: 2vh;
+  font-size: large;
+}
+
+.main-text {
+  color: white;
+  margin-left: 10vh;
+  margin-top: -3vh;
+}
+
+.likes {
+  width: 95%;
+  display: flex;
+  justify-content: end;
+}
+
+.likes > p {
+  color: white;
+  margin-left: 10px;
+  margin-top: -3px;
 }
