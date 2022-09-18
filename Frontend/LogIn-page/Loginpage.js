@@ -1,27 +1,27 @@
 // Get the Sign-up Modal
 ///////////////////////////////////////////////////////////////////
-var signupmodal = document.querySelector("#myModal-signup");
+var signup_modal = document.querySelector("#myModal-signup");
 
 // Get the button that opens the modal
-var signupbtn = document.querySelector("#sign-up");
+var signup_btn = document.querySelector("#sign-up");
 
 // Get the <span> element that closes the modal
-var signupclose = document.querySelector("#signup-close");
+var signup_close = document.querySelector("#signup-close");
 
 // When the user clicks the button, open the modal
-signupbtn.onclick = function () {
-  signupmodal.style.display = "block";
+signup_btn.onclick = function () {
+  signup_modal.style.display = "block";
 };
 
 // When the user clicks on <span> (x), close the modal
-signupclose.onclick = function () {
-  signupmodal.style.display = "none";
+signup_close.onclick = function () {
+  signup_modal.style.display = "none";
 };
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
-  if (event.target == signupmodal) {
-    signupmodal.style.display = "none";
+  if (event.target == signup_modal) {
+    signup_modal.style.display = "none";
   }
 };
 ////////////////////////////////////////////////////////////////////
@@ -54,10 +54,35 @@ window.onclick = function (event) {
 };
 ////////////////////////////////////////////////////////////////////
 
+// sign up
+const sigup_name = document.querySelector("#p1-name");
+const sigup_username = document.querySelector("#p1-username");
+const email = document.querySelector("#p1-email");
+const dob = document.querySelector("#p1-dob");
+const signup_password = document.querySelector("#p1-password");
+const signup = document.querySelector("#sign-up");
+const php_signup = "http://localhost/Backend/signup.php";
+
+signup.addEventListener("click", function () {
+  fetch(php_signup, {
+    method: "POST",
+    body: new URLSearchParams({
+      full_name: sigup_name.value,
+      user_name: sigup_username.value,
+      email: email.value,
+      dob: dob.value,
+      user_password: signup_password.value,
+    }),
+  });
+  signup_modal.style.display = "none";
+  signinmodal.style.display = "block";
+});
+
 // This is the logIn section
 const logIn = document.querySelector("#log-in");
 const user = document.querySelector("#p2-username");
 const password = document.querySelector("#p2-password");
+
 let php_login = "http://localhost/Backend/login.php";
 fetch(php_login)
   .then((x) => x.json())
@@ -80,20 +105,6 @@ fetch(php_login)
       }
     })
   );
-
-// sign up
-const signup = document.querySelector("#sign-up");
-let php_signup = "http://localhost/Backend/signup.php";
-//
-logIn.addEventListener("click", function () {
-  fetch(php_signup, {
-    method: "POST",
-    body: new URLSearchParams({
-      user_name: user.value,
-      user_password: password.value,
-    }),
-  });
-});
 
 // making the log in glow
 
