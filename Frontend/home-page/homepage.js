@@ -4,8 +4,10 @@
 user_name = "Housam Kak";
 profile_photo = "/Frontend/home-page/Images/demo-img.jpg";
 likes_number = "4";
+counter = 1;
 mystatus = document.querySelector("#status");
-tweet = `<div class="reusable-element">
+firstelement = document.querySelector("#first-element");
+tweet = `<div id="${counter}"class="reusable-element">
             <div class="title-content">
               <div class="image-content">
                 <img
@@ -32,6 +34,14 @@ tweet = `<div class="reusable-element">
 tweet_btn_small = document.querySelector("#tweet-btn-small");
 
 tweet_btn_small.addEventListener("click", () => {
+  if (counter < 2) {
+    firstelement.insertAdjacentElement("afterend", tweet);
+  } else {
+    id = counter - 1;
+    element_id = "#" + id.toString();
+    newelement = document.querySelector(element_id);
+    insertAdjacentElement("afterend", tweet);
+  }
 
-    
+  counter += 1;
 });
