@@ -120,11 +120,9 @@ logIn.addEventListener("click", function () {
         if (!y.pass_valid) {
           password_label.textContent = "Password is invalid";
         } else {
+          window.location.href = "/Frontend/home-page/homepage.html";
           password_label.textContent = "WELCOME";
           localStorage.setItem("active-user", JSON.stringify(user.value));
-          // logged_in_user = localStorage.getItem("active-user")
-          //   ? JSON.parse(localStorage.getItem("active-user"))
-          //   : "";
         }
       }
     });
