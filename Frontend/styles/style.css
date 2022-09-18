@@ -329,7 +329,7 @@ label {
   height: 100vh;
   width: 26%;
   position: fixed;
-  background-color: rgb(239, 181, 181);
+  background-color: black;
   border-right: 1px #2f3336;
   border-style: solid;
   border-bottom: none;
@@ -343,7 +343,7 @@ label {
   height: 100vh;
   position: fixed;
   left: 66%;
-  border-left: 1px #2f3336;
+  border-left: 2px #2f3336;
   border-style: solid;
   border-bottom: none;
   border-top: none;
@@ -351,8 +351,8 @@ label {
 }
 
 .middle-side {
-  /* height: 200vh; */
-  background-color: #1a8cd8;
+  /* height: 1000vh; */
+  background-color: black;
   width: 40%;
   position: absolute;
   left: 26%;
@@ -437,4 +437,92 @@ label {
 
 .rightside-p{
   color: #ffffff;
+  
+/* Middle side first part */
+
+.happening {
+  padding: 1vh 3vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border-bottom: 2px #2f3336;
+  border-style: solid;
+}
+.happening h1 {
+  font-size: larger;
+  margin-bottom: 2vh;
+  font-weight: 650;
+}
+
+.im-happen {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.im-happen input {
+  width: 88%;
+  color: white;
+  background-color: black;
+  border: none;
+  outline: none;
+  font-size: larger;
+}
+
+.im-happen input:focus {
+  border-bottom: 3px solid;
+}
+
+.profile-photo {
+  height: 8vh;
+  width: 8vh;
+  border-radius: 8vh;
+  margin-bottom: 2vh;
+}
+
+.tweet-btn {
+  height: 6vh;
+  display: flex;
+  justify-content: end;
+}
+
+.tweet-btn button {
+  background-color: #1d9bf0;
+  width: 10vh;
+  height: 5vh;
+  color: white;
+  border-radius: 20px;
+  font-size: medium;
+  font-weight: bold;
+}
+
+/* Element styling */
+.reusable-element {
+  padding: 1vh 3vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border-bottom: 2px #2f3336;
+  border-style: solid;
+}
+
+.image-content {
+  display: flex;
+  width: 100%;
+}
+
+/* .image-content > div {
+  
+}
+
+.image-content > div h1 {
+  font-size: large;
+  margin-bottom: 2vh;
+}
+
+*/
+.image-content > div > p {
+  color: white;
+}
+
+.title-text {
+  display: flex;
+  flex-direction: row;
 }
