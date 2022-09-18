@@ -52,7 +52,7 @@ window.onclick = function (event) {
   }
 };
 ////////////////////////////////////////////////////////////////////
-
+const label = document.createElement("label");
 // sign up data sending to server
 const signup_name = document.querySelector("#p1-name");
 const signup_username = document.querySelector("#p1-username");
@@ -61,20 +61,39 @@ const dob = document.querySelector("#p1-dob");
 const signup_password = document.querySelector("#p1-password");
 const signup = document.querySelector("#sign-up-btn");
 const php_signup = "http://localhost/Backend/signup.php";
+let php_login = "http://localhost/Backend/login.php";
 
-signup.addEventListener("click", function () {
-  fetch(php_signup, {
+signup.addEventListener("click", () => {
+  fetch(php_login, {
     method: "POST",
     body: new URLSearchParams({
-      full_name: signup_name.value,
       user_name: signup_username.value,
-      email: email.value,
-      dob: dob.value,
-      user_password: signup_password.value,
+      user_password: "",
     }),
-  });
-  signup_modal.style.display = "none";
-  signinmodal.style.display = "block";
+  })
+    .then((x) => x.json())
+    .then((y) => {
+      if (!y.ispresent) {
+        fetch(php_signup, {
+          method: "POST",
+          body: new URLSearchParams({
+            full_name: signup_name.value,
+            user_name: signup_username.value,
+            email: email.value,
+            dob: dob.value,
+            user_password: signup_password.value,
+          }),
+        });
+        signup_modal.style.display = "none";
+        signinmodal.style.display = "block";
+      } else {
+        const signup_username_label = signup_username.insertAdjacentElement(
+          "afterend",
+          label
+        );
+        signup_username_label.textContent = "Username exists";
+      }
+    });
 });
 
 // This is the logIn section, checking if the data is in the server
@@ -82,8 +101,6 @@ signup.addEventListener("click", function () {
 const logIn = document.querySelector("#log-in");
 const user = document.querySelector("#p2-username");
 const password = document.querySelector("#p2-password");
-
-let php_login = "http://localhost/Backend/login.php";
 
 logIn.addEventListener("click", function () {
   fetch(php_login, {
@@ -95,7 +112,17 @@ logIn.addEventListener("click", function () {
   })
     .then((x) => x.json())
     .then((y) => {
-      console.log(y);
+      if (!y.ispresent) {
+        username_label = user.insertAdjacentElement("afterend", label);
+        username_label.textContent = "Username doesn't exist";
+      } else {
+        password_label = password.insertAdjacentElement("afterend", label);
+        if (!y.pass_valid) {
+          password_label.textContent = "Password is invalid";
+        } else {
+          password_label.textContent = "WELCOME";
+        }
+      }
     });
 });
 
@@ -113,7 +140,7 @@ if (!user.value.Empty) {
   }
 }
 
-//
+// changing to sign up from log in
 newaccount = document.querySelector("#newaccount");
 newaccount.addEventListener("click", () => {
   signup_modal.style.display = "block";
@@ -125,3 +152,33 @@ newaccount.addEventListener("click", () => {
 //   ? JSON.parse(localStorage.getItem("man"))
 //   : "";
 // localStorage.removeItem("key");
+
+// fetch(php_login, {
+//   method: "POST",
+//   body: new URLSearchParams({
+//     user_name: user.value,
+//     user_name: signup_username.value,
+//     user_password: "",
+//   })
+// })
+// .then((x) => x.json())
+// .then((y) => (y)=>{
+//     if (!y.ispresent) {fetch(php_signup, {
+//       method: "POST",
+//       body: new URLSearchParams({
+//         full_name: signup_name.value,
+//         user_name: signup_username.value,
+//         email: email.value,
+//         dob: dob.value,
+//         user_password: signup_password.value,
+//       }),
+//     });
+//     signup_modal.style.display = "none";
+//     signinmodal.style.display = "block";
+//   }else {
+//     const signup_username_label = signup_username.insertAdjacentElement(
+//       "afterend",
+//       label
+//     );
+//     signup_username_label.textContent = "Username exists";}
+//     }),

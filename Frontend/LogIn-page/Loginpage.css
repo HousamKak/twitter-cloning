@@ -297,6 +297,10 @@ h1 {
   height: 100vh;
 }
 
+label {
+  color: red;
+  padding-left: 1.4vh;
+}
 /* Media queries */
 
 @media screen and (max-width: 1000px) {
