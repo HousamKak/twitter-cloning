@@ -438,6 +438,7 @@ label {
 .rightside-p {
   color: #ffffff;
 }
+
 /* Middle side first part */
 
 .happening {
@@ -503,26 +504,22 @@ label {
   border-style: solid;
 }
 
-.image-content {
+.title-content {
   display: flex;
   width: 100%;
+  justify-content: space-between;
 }
 
-/* .image-content > div {
-  
+.title-content > p {
+  margin-top: 2vh;
 }
 
-.image-content > div h1 {
-  font-size: large;
-  margin-bottom: 2vh;
-}
-
-*/
-.image-content > div > p {
-  color: white;
-}
-
-.title-text {
+.image-content {
   display: flex;
-  flex-direction: row;
+}
+
+.image-content > h1 {
+  margin-top: 2vh;
+  padding-left: 2vh;
+  font-size: large;
 }
