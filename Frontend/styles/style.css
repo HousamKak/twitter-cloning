@@ -323,7 +323,6 @@ label {
 
 .Home-page-container {
   display: flex;
-  /* position: relative; */
 }
 
 .left-side {
@@ -342,6 +341,7 @@ label {
 }
 
 .middle-side {
+  height: 200vh;
   background-color: #1a8cd8;
   width: 40%;
   position: absolute;
