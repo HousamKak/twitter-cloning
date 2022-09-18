@@ -341,7 +341,7 @@ label {
 }
 
 .middle-side {
-  /* height: 200vh; */
+  height: 200vh;
   background-color: #1a8cd8;
   width: 40%;
   position: absolute;
