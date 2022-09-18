@@ -523,3 +523,21 @@ label {
   padding-left: 2vh;
   font-size: large;
 }
+
+.main-text {
+  color: white;
+  margin-left: 10vh;
+  margin-top: -3vh;
+}
+
+.likes {
+  width: 95%;
+  display: flex;
+  justify-content: end;
+}
+
+.likes > p {
+  color: white;
+  margin-left: 10px;
+  margin-top: -3px;
+}
