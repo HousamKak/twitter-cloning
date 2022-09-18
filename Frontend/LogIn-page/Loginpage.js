@@ -121,6 +121,10 @@ logIn.addEventListener("click", function () {
           password_label.textContent = "Password is invalid";
         } else {
           password_label.textContent = "WELCOME";
+          localStorage.setItem("active-user", JSON.stringify(user.value));
+          // logged_in_user = localStorage.getItem("active-user")
+          //   ? JSON.parse(localStorage.getItem("active-user"))
+          //   : "";
         }
       }
     });
@@ -146,39 +150,3 @@ newaccount.addEventListener("click", () => {
   signup_modal.style.display = "block";
   signinmodal.style.display = "none";
 });
-
-// localStorage.setItem("man", JSON.stringify("heowaadsd"));
-// logged_in_user = localStorage.getItem("man")
-//   ? JSON.parse(localStorage.getItem("man"))
-//   : "";
-// localStorage.removeItem("key");
-
-// fetch(php_login, {
-//   method: "POST",
-//   body: new URLSearchParams({
-//     user_name: user.value,
-//     user_name: signup_username.value,
-//     user_password: "",
-//   })
-// })
-// .then((x) => x.json())
-// .then((y) => (y)=>{
-//     if (!y.ispresent) {fetch(php_signup, {
-//       method: "POST",
-//       body: new URLSearchParams({
-//         full_name: signup_name.value,
-//         user_name: signup_username.value,
-//         email: email.value,
-//         dob: dob.value,
-//         user_password: signup_password.value,
-//       }),
-//     });
-//     signup_modal.style.display = "none";
-//     signinmodal.style.display = "block";
-//   }else {
-//     const signup_username_label = signup_username.insertAdjacentElement(
-//       "afterend",
-//       label
-//     );
-//     signup_username_label.textContent = "Username exists";}
-//     }),
