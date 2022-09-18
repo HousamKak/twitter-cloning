@@ -55,39 +55,50 @@ window.onclick = function (event) {
 ////////////////////////////////////////////////////////////////////
 
 // sign up
-const sigup_name = document.querySelector("#p1-name");
-const sigup_username = document.querySelector("#p1-username");
+const signup_name = document.querySelector("#p1-name");
+const signup_username = document.querySelector("#p1-username");
 const email = document.querySelector("#p1-email");
 const dob = document.querySelector("#p1-dob");
 const signup_password = document.querySelector("#p1-password");
-const signup = document.querySelector("#sign-up");
+const signup = document.querySelector("#sign-up-btn");
 const php_signup = "http://localhost/Backend/signup.php";
 
 signup.addEventListener("click", function () {
   fetch(php_signup, {
     method: "POST",
     body: new URLSearchParams({
-      full_name: sigup_name.value,
-      user_name: sigup_username.value,
+      full_name: signup_name.value,
+      user_name: signup_username.value,
       email: email.value,
       dob: dob.value,
       user_password: signup_password.value,
     }),
   });
-  // signup_modal.style.display = "none";
-  // signinmodal.style.display = "block";
+  signup_modal.style.display = "none";
+  signinmodal.style.display = "block";
 });
 
 // This is the logIn section
 
-const logIn = document.querySelector("#log-In");
+const logIn = document.querySelector("#log-in");
 const user = document.querySelector("#p2-username");
 const password = document.querySelector("#p2-password");
 
 let php_login = "http://localhost/Backend/login.php";
-fetch(php_login)
-  .then((x) => x.json())
-  .then((y) =>
+
+logIn.addEventListener("click", function () {
+  fetch(php_signup, {
+    method: "POST",
+    body: new URLSearchParams({
+      user_name: signup_username.value,
+      user_password: signup_password.value,
+    }),
+  });
+
+});
+
+
+
     logIn.addEventListener("click", () => {
       for (i = 0; i < y.length; i++) {
         userfound = 0;
@@ -105,7 +116,6 @@ fetch(php_login)
         console.log("You are not registered");
       }
     })
-  );
 
 // making the log in glow
 
