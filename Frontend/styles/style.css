@@ -330,6 +330,11 @@ label {
   width: 26%;
   position: fixed;
   background-color: rgb(239, 181, 181);
+  border-right: 1px #2f3336;
+  border-style: solid;
+  border-bottom: none;
+  border-top: none;
+  border-left: none;
 }
 
 .right-side {
@@ -338,6 +343,11 @@ label {
   height: 100vh;
   position: fixed;
   left: 66%;
+  border-left: 1px #2f3336;
+  border-style: solid;
+  border-bottom: none;
+  border-top: none;
+  border-right: none;
 }
 
 .middle-side {
